@@ -1,0 +1,17 @@
+
+<table>
+	<tr>
+		<th>User Id</th>
+		<th>First</th>
+		<th>Last</th>
+		<th>DOB</th>
+		<th>Username</th>
+	</tr>
+	<tr>
+		<td><%= @user.id %></a></td>
+		<td><%= @user.fname %></td>
+		<td><%= @user.lname %></td>
+		<td><%= @user.dob.strftime "%D" if @user.dob %></td>
+		<td><%= @user.username %></td>
+	</tr>
+</table> 

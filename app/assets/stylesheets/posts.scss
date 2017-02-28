@@ -1,0 +1,66 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.title{
+	font-weight: bold;
+	font-size: 1.5em;
+   -moz-border-radius: 4px 4px 4px 4px;
+   -webkit-border-radius: 4px 4px 4px 4px;
+   border-radius: 4px 4px 4px 4px;
+   padding: 12px 25px 12px 24px;
+   text-align: center;
+   color: white;
+   padding-top: 20px;
+
+}
+
+.text{
+   -moz-border-radius: 4px 4px 4px 4px;
+   -webkit-border-radius: 4px 4px 4px 4px;
+   border-radius: 4px 4px 4px 4px;
+   margin-bottom: 18px;
+   padding: 12px 25px 12px 24px;
+   text-align: center;
+   background-color: #ffffff;
+   color: black;
+   padding-top: 20px;
+}
+
+.image{
+   margin-bottom: 15px;
+   padding: 12px 25px 12px 8px;
+   // -moz-border-radius: 4px 4px 4px 4px;
+   // -webkit-border-radius: 4px 4px 4px 4px;
+   // border-radius: 4px 4px 4px 4px;
+   // margin-bottom: 18px;
+   // padding: 12px 25px 12px 24px;
+   // // text-align: center;
+   // color: black;
+   // padding-top: 20px;
+
+}
+
+.comment{
+	color: blue;
+	font-weight: bold;
+   -moz-border-radius: 4px 4px 4px 4px;
+   -webkit-border-radius: 4px 4px 4px 4px;
+   border-radius: 4px 4px 4px 4px;
+   margin-bottom: 18px;
+   padding: 12px 25px 12px 24px;
+   text-align: center;
+   color: white;
+   background-color: grey;
+   padding-top: 20px;
+
+}
+
+.row {
+	width: 50%;
+	margin-left: 350px;
+}
+
+.btn{
+	margin: 15px;
+}

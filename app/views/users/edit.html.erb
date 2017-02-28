@@ -1,0 +1,34 @@
+<h4>PULL YOURSELF TOGETHER FOR A SECOND!</h4>
+<div class = "col-md-offset-4 col-md-4">
+	<%= form_for @user, html: {method: :patch} do |f| %> 
+	<div class="form-login">
+		<h4>EDIT USER</h4>
+		<%= f.label :fname, "First Name" %> 
+		<%= f.text_field :fname,  class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="form-login">
+		<%= f.label :lname, "Last Name" %> 
+		<%= f.text_field :lname, class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="form-login">
+		<%= f.label :dob, "DOB" %> 
+		<%= f.date_field :dob, class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="form-login">
+		<%= f.label :username, "Username" %> 
+		<%= f.text_field :username, class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="form-login">
+		<%= f.label :password, "Current Password" %> 
+		<%= password_field :password, nil, class: "form-control input-sm chat-input"%>
+	</div>
+	<div class="form-login">
+		<%= f.label :new_password, "New Password" %> 
+		<%= password_field :new_password, nil, class: "form-control input-sm chat-input"%>
+	</div>	 
+	<div class="wrapper">
+		<%= f.submit class: "btn btn-primary btn-md", value: "Save Changes"%>
+	</div>
+	<% end %>
+</div>
+

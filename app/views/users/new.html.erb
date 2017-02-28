@@ -1,0 +1,45 @@
+<h4>ONLY ONE STEP LEFT TO JOIN OUR COMMUNITY</h4>
+<h4>YES WE KNOW SANITY IS OVERRATED!</h4>
+<div class = "col-md-offset-4 col-md-4">
+	<%= form_for User.new do |f| %> 
+	<div class="form-login">
+		<h4>NEW USER</h4>
+		<%= f.label :fname, "First Name" %> 
+		<%= f.text_field :fname,  class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="form-login">
+		<%= f.label :lname, "Last Name" %> 
+		<%= f.text_field :lname, class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="form-login">
+		<%= f.label :dob, "DOB" %> 
+		<%= f.text_field :dob, class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="form-login">
+		<%= f.label :username, "Username" %> 
+		<%= f.text_field :username, class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="form-login">
+		<%= f.label :password, "Password" %> 
+		<%= f.text_field :password, class: "form-control input-sm chat-input"%>
+	</div>
+	<b></b>	 
+	<div class="wrapper">
+		<%= f.submit class: "btn btn-primary btn-md", value: "SIGNUP"%>
+	</div>
+	<% end %>
+	<% if @user && @user.errors.full_messages.any? %> 
+	<div class="form-login"> 
+		<ul><% @user.errors.full_messages.each do |error_message| %>       
+			<li><%= error_message %></li> 
+			<br />     
+			<% end %>   
+		</ul>
+	</div>
+	<% end %>
+</div>
+
+
+
+
+

@@ -1,0 +1,16 @@
+<div class = "col-md-offset-4 col-md-4">
+	<%= form_for @post, html: {method: :patch} do |t| %> 
+	<div class="form-login">
+		<h4>EDIT POST</h4>
+		<%= t.label :title, "TITLE" %> 
+		<%= t.text_field :title,  class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="form-login">
+		<%= t.label :text, "TEXT" %> 
+		<%= t.text_field :text, class: "form-control input-sm chat-input"%> 
+	</div>	 
+	<div class="wrapper">
+		<%= t.submit class: "btn btn-primary btn-md", value: "Save Changes"%>
+	</div>
+	<% end %>
+</div>

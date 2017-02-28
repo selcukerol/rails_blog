@@ -1,0 +1,21 @@
+
+<div class = "col-md-offset-4 col-md-4">
+	<%= form_for Post.new, html: { multipart: true } do |t| %> 
+	<div class="form-login">
+		<h4>NEW POST</h4>
+		<%= t.label :title, "Title" %> 
+		<%= t.text_field :title,  class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="form-login">
+		<%= t.label :text, "Text" %> 
+		<%= t.text_field :text, class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="form-login">
+		<%= t.label :image, "Image" %> 
+		<%= t.file_field :image, class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="wrapper">
+		<%= t.submit class: "btn btn-primary btn-md", value: "CREATE POST"%>
+	</div>
+	<% end %>
+</div>	

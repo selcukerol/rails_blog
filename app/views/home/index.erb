@@ -1,0 +1,23 @@
+<h4>HAVE YOUR EVER LOST YOUR MARBLES ?</h4>
+<h4>JOIN OUR BLOG !!!</h4>
+</br>
+</br>
+</br>
+    <div class="col-md-offset-4 col-md-4">
+      <div class="form-login">
+        <%= form_tag login_path do %>  
+        <%= label_tag :username, "Username" %>  
+        <%= text_field_tag :username, "",class: "form-control input-sm chat-input"%>
+        <%= label_tag :password, "Password" %>  
+        <%= password_field_tag :password, "",class: "form-control input-sm chat-input"%>
+      </br>
+      <span class="group-btn">     
+        <%= submit_tag "LOG IN", class: "btn btn-large btn-primary" %>
+      </span>
+      <span class="group-btn">
+        <a href="/users/new" class="btn btn-primary btn-md">SIGN UP<i class="fa fa-sign-up"></i></a>  
+      </span>
+      <% end %>
+    </div>
+  </div>
+

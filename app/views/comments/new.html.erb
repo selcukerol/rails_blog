@@ -1,0 +1,14 @@
+<h4>SPEAK UP MY DEAR!</h4>
+<h4>SHE WANTS TO HEAR FROM YOU</h4>
+<div class = "col-md-offset-4 col-md-4">
+	<%= form_tag post_comments_path(params[:post_id]) do %> 
+	<div class="form-login">
+		<h4>NEW COMMENT</h4>
+		<%= label_tag :text, "Comment" %> 
+		<%= text_field_tag :text, nil, class: "form-control input-sm chat-input"%> 
+	</div>
+	<div class="wrapper">
+		<%= submit_tag "", class: "btn btn-primary btn-md", value: "POST COMMENT"%>
+	</div>
+	<% end %>
+</div>	
