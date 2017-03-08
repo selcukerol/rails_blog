@@ -21,7 +21,12 @@ class UsersController < ApplicationController
 	def update
 		@user = User.find(params[:id])
 		if(@user.password == params[:user][:password] && params[:user][:new_password].length > 0)
-			@user.update(user_params.reject{|k| k.include? "password"}.merge( password: params[:user][:new_password]))
+			@user.update(fname: params[:user][:fname],
+				lname: params[:user][:lname],
+				dob: params[:user][:dob],
+				username: params[:user][:username],
+				password: params[:user][:new_password]
+				)
 		end
 		flash[:notice] = "Profile Updated Congrats"
 		redirect_to '/'
