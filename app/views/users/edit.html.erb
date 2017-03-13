@@ -20,11 +20,11 @@
 	</div>
 	<div class="form-login">
 		<%= f.label :password, "Current Password" %> 
-		<%= f.password_field :password, class: "form-control input-sm chat-input"%>
+		<%= f.password_field :password, class: "form-control input-sm chat-input", value: current_user.password%>
 	</div>
 	<div class="form-login">
 		<%= f.label :new_password, "New Password" %> 
-		<%= f.password_field :new_password, class: "form-control input-sm chat-input"%>
+		<%= f.password_field :new_password, class: "form-control input-sm chat-input", value: current_user.password%>
 	</div>	 
 	<div class="wrapper">
 		<%= f.submit class: "btn btn-primary btn-md", value: "Save Changes"%>
